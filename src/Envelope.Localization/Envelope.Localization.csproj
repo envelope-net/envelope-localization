@@ -19,7 +19,7 @@
     <Authors>Tomas Pilat</Authors>
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>..\..\Envelope.snk</AssemblyOriginatorKeyFile>
-    <Version>1.1.2</Version>
+    <Version>1.1.3</Version>
   </PropertyGroup>
 
   <PropertyGroup>
@@ -35,8 +35,8 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <PackageReference Include="Envelope.Core" Version="1.1.2" />
-	  <PackageReference Include="Microsoft.Extensions.Localization" Version="6.0.8" />
+	  <PackageReference Include="Envelope.Core" Version="1.1.3" />
+	  <PackageReference Include="Microsoft.Extensions.Localization" Version="6.0.9" />
 		<PackageReference Include="Microsoft.VisualStudio.Threading.Analyzers" Version="17.3.44">
 		  <PrivateAssets>all</PrivateAssets>
 		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
