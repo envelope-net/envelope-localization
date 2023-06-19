@@ -23,7 +23,7 @@ public class ResxBuilder
 		else
 		{
 			_resxFilePath = resxFilePath;
-			_root = XmlSerializerHelper.ReadFromXml<root>(_resxFilePath) ?? throw new ArgumentException("_root == null", nameof(resxFilePath));
+			_root = XmlSerializerHelper.DeserializeFromXmlFile<root>(_resxFilePath) ?? throw new ArgumentException("_root == null", nameof(resxFilePath));
 		}
 
 		_dataList = new List<ResxData>();
@@ -100,7 +100,7 @@ public class ResxBuilder
 		if (string.IsNullOrWhiteSpace(resxFilePath))
 			throw new ArgumentNullException(nameof(resxFilePath));
 
-		XmlSerializerHelper.WriteToXml(resxFilePath!, _root);
+		XmlSerializerHelper.SerializeToXmlFile(resxFilePath!, _root);
 	}
 
 #pragma warning disable IDE1006 // Naming Styles

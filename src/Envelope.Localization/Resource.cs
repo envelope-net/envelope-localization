@@ -46,7 +46,7 @@ public class Resource
 				bool hasError = false;
 				if (!int.TryParse(numParameters[i], out int intValue))
 				{
-					Errors.Add($"{Name} has invalid formatting parameter {numParameters[i]}. Can not cast to int.");
+					Errors.Add($"{Name} has invalid formatting parameter {numParameters[i]}. Cannot cast to int.");
 					hasError = true;
 				}
 
